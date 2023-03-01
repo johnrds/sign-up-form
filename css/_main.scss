@@ -46,7 +46,8 @@ button {
     border-radius: 10px;
     box-shadow: 1px 1px 3px #000;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
         background-color: $clr-light-primary;
     }
 }
@@ -55,7 +56,8 @@ a {
     color: $clr-primary;
     text-decoration: none;
 
-    &:hover {
+    &:hover,
+    &:focus-visible {
         color: $clr-light-primary;
         text-decoration: underline;
     }

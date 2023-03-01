@@ -1,0 +1,9 @@
+input{
+    border: 1px solid $clr-light-gray;
+    border-radius: 5px;
+
+    &:focus{
+        border-color:$clr-primary;
+        box-shadow: 1px 1px 5px $clr-primary;
+    }
+}

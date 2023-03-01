@@ -20,7 +20,8 @@
             color: $clr-dark-gray;
             text-decoration: none;
 
-            &:hover {
+            &:hover,
+            &:focus-visible {
                 color: $clr-gray;
                 text-decoration: underline;
             }

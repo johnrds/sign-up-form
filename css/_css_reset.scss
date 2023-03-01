@@ -5,6 +5,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: none;
+  outline: inherit;
 }
 
 /* Remove default margin */

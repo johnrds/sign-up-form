@@ -4,6 +4,8 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  outline: none;
+  outline: inherit;
 }
 
 /* Remove default margin */
@@ -95,7 +97,7 @@ select {
   color: hsl(0, 0%, 5%);
   text-decoration: none;
 }
-.aside p a:hover {
+.aside p a:hover, .aside p a:focus-visible {
   color: hsl(0, 0%, 10%);
   text-decoration: underline;
 }
@@ -159,7 +161,7 @@ button {
   border-radius: 10px;
   box-shadow: 1px 1px 3px #000;
 }
-button:hover {
+button:hover, button:focus-visible {
   background-color: hsl(33, 77%, 70%);
 }
 
@@ -167,9 +169,18 @@ a {
   color: hsl(33, 77%, 54%);
   text-decoration: none;
 }
-a:hover {
+a:hover, a:focus-visible {
   color: hsl(33, 77%, 70%);
   text-decoration: underline;
+}
+
+input {
+  border: 1px solid hsl(0, 0%, 60%);
+  border-radius: 5px;
+}
+input:focus {
+  border-color: hsl(33, 77%, 54%);
+  box-shadow: 1px 1px 5px hsl(33, 77%, 54%);
 }
 
 @font-face {
