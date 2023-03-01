@@ -35,32 +35,38 @@
                     <p>Let's do This!</p>
                     <ul>
                         <li> <label for="firstName">First Name <br></label>
-                            <input type="text" name="user_firstName" id="firstName" required>
+                            <input  type="text" name="user_firstName" id="firstName" pattern="[a-z]\gi" required>
+                            <p class="hidden">* Must be filled</p>
                         </li>
 
                         <li>
                             <label for="lastName">Last Name <br></label>
-                            <input type="text" name="user_lastName" id="lastName" required>
+                            <input type="text" name="user_lastName" id="lastName" pattern="[a-z]\gi" required>
+                            <p class="hidden">* Must be filled</p>
                         </li>
 
                         <li>
                             <label for="email">Email <br></label>
-                            <input type="text" name="user_email" id="email" required>
+                            <input type="email" name="user_email" id="email" placeholder="example@mail.com" required>
+                            <p class="hidden">* Must be a valid email</p>
                         </li>
 
                         <li>
                             <label for="phone">Phone Number <br></label>
-                            <input type="tel" name="user_phone" id="phone" required>
+                            <input type="tel" name="user_phone" id="phone"  placeholder="(123) 456-7890" pattern="^[0-9]{10}$" required>
+                            <p class="hidden">* Must be a valid phone number with 10 digits</p>
                         </li>
 
                         <li>
                             <label for="psw">Password <br></label>
-                            <input type="password" name="user_psw" id="psw" required>
+                            <input type="password" name="user_psw" id="psw" minlength="8"  required>
+                            <p class="hidden">* Must be at least 8 digits long</p>
                         </li>
 
                         <li>
                             <label for="check_psw">Confirm Password <br></label>
-                            <input type="password" name="user_check_psw" id="check_psw" required>
+                            <input type="password" name="user_check_psw" id="check_psw" minlength="8" required>
+                            <p class="hidden">* Passwords don't match</p>
                         </li>
                     </ul>
                 </div>

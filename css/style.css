@@ -174,13 +174,44 @@ a:hover, a:focus-visible {
   text-decoration: underline;
 }
 
+ul p {
+  color: red;
+  font-size: 0.8rem;
+}
+ul p.hidden {
+  display: none;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
 input {
+  font-size: 0.8rem;
   border: 1px solid hsl(0, 0%, 60%);
   border-radius: 5px;
+  /*
+
+
+  &:not(:placeholder-shown) {
+
+      &:invalid {
+          border-color: red;
+
+          &:focus {
+              box-shadow: 1px 1px 5px red;
+          }
+      }
+  }*/
 }
 input:focus {
-  border-color: hsl(33, 77%, 54%);
-  box-shadow: 1px 1px 5px hsl(33, 77%, 54%);
+  border-color: hsl(240, 95%, 61%);
+  box-shadow: 1px 1px 3px hsl(240, 95%, 61%);
+}
+input.invalid {
+  border-color: red;
+  box-shadow: 0px 0px 5px red;
 }
 
 @font-face {
@@ -188,6 +219,7 @@ input:focus {
   src: url(/assets/font/norse-bold-webfont.woff2) format("woff2"), url(/assets/font/norse-bold-webfont.woff) format("woff");
 }
 .container {
+  color: hsl(0, 0%, 10%);
   display: flex;
   min-height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

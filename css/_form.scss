@@ -1,9 +1,47 @@
-input{
+ul {
+    p {
+        color: red;
+        font-size: $size-80;
+
+        &.hidden {
+            display: none;
+        }
+
+    }
+}
+
+label {
+    text-transform: uppercase;
+    font-size: $size-80;
+}
+
+input {
+    font-size: $size-80;
     border: 1px solid $clr-light-gray;
     border-radius: 5px;
 
-    &:focus{
-        border-color:$clr-primary;
-        box-shadow: 1px 1px 5px $clr-primary;
+
+    &:focus {
+        border-color: $clr-blue;
+        box-shadow: 1px 1px 3px $clr-blue;
     }
+
+    &.invalid {
+        border-color: red;
+        box-shadow: 0px 0px 5px red;
+    }
+
+    /*
+    
+
+    &:not(:placeholder-shown) {
+
+        &:invalid {
+            border-color: red;
+    
+            &:focus {
+                box-shadow: 1px 1px 5px red;
+            }
+        }
+    }*/
 }
