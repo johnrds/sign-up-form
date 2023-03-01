@@ -1,7 +1,7 @@
-# SingUp Form
+# SignUp Form
 
 ## About
-A simple sing-up form made with html/css/js
+A simple sign-up form made with html/css/js
 
 ## Links
 [View on GitHub Pages](https://johnrds.github.io/sing-up-form/)
