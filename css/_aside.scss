@@ -1,6 +1,7 @@
 .aside {
     min-height: 100vh;
-    width: clamp(300px, 40%, 50%);
+    min-width: 250px;
+    width: 40%;
     color: $clr-dark-gray;
     font-size: $size-80;
     background: url("/assets/images/background-photo.jpg");

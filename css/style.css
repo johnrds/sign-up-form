@@ -75,7 +75,8 @@ select {
 }
 .aside {
   min-height: 100vh;
-  width: clamp(300px, 40%, 50%);
+  min-width: 250px;
+  width: 40%;
   color: hsl(0, 0%, 5%);
   font-size: 0.8rem;
   background: url("/assets/images/background-photo.jpg");
@@ -137,11 +138,15 @@ form p {
   padding: 1rem 4rem 2rem;
 }
 .form-content ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
   gap: 1rem;
+}
+.form-content ul > * {
+  flex: 1 1 33%;
 }
 
 button {
