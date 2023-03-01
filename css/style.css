@@ -81,7 +81,7 @@ select {
   width: 40%;
   color: hsl(0, 0%, 5%);
   font-size: 0.8rem;
-  background: url("/assets/images/background-photo.jpg");
+  background: url("./../assets/images/background-photo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
