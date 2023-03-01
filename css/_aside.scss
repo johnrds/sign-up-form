@@ -1,0 +1,41 @@
+.aside {
+    color: $clr-white;
+    min-height: 100vh;
+    width: 70%;
+    background: url("/assets/images/background-photo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: $size-200;
+
+    p a{
+        color: $clr-white;
+        text-decoration: none;
+        
+        &:hover{
+            color: $clr-light-gray;
+            text-decoration: underline;
+        }
+    }
+
+}
+
+.logo {
+    margin-top: $size-600;
+    font-size: $size-400;
+    font-family: $ff-nexus;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        height: 100px;
+        padding-block: $size-100;
+    }
+}
