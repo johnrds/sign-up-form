@@ -1,7 +1,8 @@
 .aside {
-    color: $clr-white;
     min-height: 100vh;
-    width: 70%;
+    width: clamp(300px, 40%, 50%);
+    color: $clr-dark-gray;
+    font-size: $size-80;
     background: url("/assets/images/background-photo.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -10,23 +11,27 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    font-size: $size-200;
 
-    p a{
-        color: $clr-white;
-        text-decoration: none;
-        
-        &:hover{
-            color: $clr-light-gray;
-            text-decoration: underline;
+    p {
+        margin-bottom: $size-100;
+
+        a {
+            color: $clr-dark-gray;
+            text-decoration: none;
+
+            &:hover {
+                color: $clr-gray;
+                text-decoration: underline;
+            }
         }
     }
 
 }
 
 .logo {
-    margin-top: $size-600;
-    font-size: $size-400;
+    color: #FFF;
+    margin-top: $size-500;
+    font-size: $size-300;
     font-family: $ff-nexus;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);

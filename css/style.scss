@@ -1,6 +1,7 @@
 @import 'variables',
 'css_reset',
-'aside';
+'aside',
+'main';
 
 @font-face {
     font-family: 'Nexus';
@@ -11,4 +12,5 @@
 .container {
     display: flex;
     min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
