@@ -17,3 +17,25 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+@media only screen and (max-width: 50rem) {
+    .container{
+        flex-direction: column;
+    }
+
+    .aside{
+        width: 100%;
+        min-height: 250px;
+    }
+
+    .logo{
+        margin-top: 5rem;
+    }
+
+    input{
+        width: 70vw;
+    }
+
+    .form-content{
+        text-align: center;
+    }
+}
